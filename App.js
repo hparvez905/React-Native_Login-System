@@ -37,10 +37,10 @@ function App(){
         component={Login}
         options={{headerTitle:()=> <Header name='E-GD'/>,
         headerStyle:{
-          height:150,
+          height:120,
           borderBottomLeftRadius:50,
-          borderBottomRightRadius:50,
-          backgroundColor:'#00e4d0',
+          borderBottomRightRadius:250,
+          backgroundColor:'#F01284',
           shadowColor:'#000',
           elevation:25
         }
@@ -53,9 +53,9 @@ function App(){
         component={Registration}
         options={{headerTitle:()=> <Header name='E-GD'/>,
         headerStyle:{
-          height:150,
+          height:120,
           borderBottomLeftRadius:50,
-          borderBottomRightRadius:50,
+          borderBottomRightRadius:250,
           backgroundColor:'#00e4d0',
           shadowColor:'#000',
           elevation:25
@@ -72,10 +72,10 @@ function App(){
         component={Dashboard}
         options={{headerTitle:()=> <Header name='E-GD'/>,
         headerStyle:{
-          height:150,
+          height:120,
           borderBottomLeftRadius:50,
-          borderBottomRightRadius:50,
-          backgroundColor:'#00e4d0',
+          borderBottomRightRadius:250,
+          backgroundColor:'#F08E12',
           shadowColor:'#000',
           elevation:25
         }

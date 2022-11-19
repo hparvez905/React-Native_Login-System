@@ -68,7 +68,7 @@ const styles=StyleSheet.create({
         width:400,
         fontSize:20,
         borderBottomWidth:1,
-        borderBottomColor:'#000',
+        borderBottomColor:'#F13F0A',
         marginBottom:10,
         textAlign:'center'
 
@@ -77,7 +77,7 @@ const styles=StyleSheet.create({
         marginTop:50,
         height:70,
         width:250,
-        backgroundColor:'#026efd',
+        backgroundColor:'#0FE005',
         alignItems:'center',
         justifyContent:'center',
         borderRadius:50,
