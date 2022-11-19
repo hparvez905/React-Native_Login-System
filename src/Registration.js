@@ -15,7 +15,7 @@ const Registration = () => {
         .then(()=>{
             firebase.auth().currentUser.sendEmailVerification({
                 handleCodeInApp:true,
-                url:'https://e-gd-58b2b.firebaseapp.com',
+                url:'https://e-gd-admin-aa8b7.firebaseapp.com',
 
         })
         .then(()=>{
@@ -45,7 +45,7 @@ const Registration = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={{fontWeight:'bold',fontSize:23}}>Register Here</Text>
+      <Text style={{fontWeight:'bold',fontSize:23}}>Admin Info</Text>
       <View style={{marginTop:40}}>
         <TextInput
         style={styles.TextInput}
@@ -94,7 +94,7 @@ const Registration = () => {
       onPress={()=>registerUser(email,password,firstName,lastName,nid)}
       style={styles.button}>
         <Text style={{fontWeight:'bold',fontSize:22}}
-        >Register</Text>
+        >SignUp</Text>
       </TouchableOpacity>
     </View>
   )
@@ -123,7 +123,7 @@ const styles=StyleSheet.create({
         marginTop:50,
         height:70,
         width:250,
-        backgroundColor:'#0FE005',
+        backgroundColor:'#00e4d0',
         alignItems:'center',
         justifyContent:'center',
         borderRadius:50,

@@ -8,8 +8,7 @@ const Login = () => {
     const navigation =useNavigation()
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-    // await firebase.auth.signInWithEmailAndPassword(email,password)
-
+    
     loginUser =async(email,password) =>{
         try {
            await firebase.auth().signInWithEmailAndPassword(email,password)
@@ -58,7 +57,7 @@ const Login = () => {
         onPress={() => navigation.navigate('Registration')}
         style={{marginTop:20}}
         >
-            <Text style={{fontWeight:'bold',fontSize:16}}>Don't have an account ? Register Now</Text>
+            <Text style={{fontWeight:'bold',fontSize:16}}>Admin SignUp</Text>
         </TouchableOpacity>
         <TouchableOpacity
         onPress={() => {forgotPassword()}}
@@ -93,7 +92,7 @@ const styles=StyleSheet.create({
         marginTop:50,
         height:70,
         width:250,
-        backgroundColor:'#0FE005',
+        backgroundColor:'#F01284',
         alignItems:'center',
         justifyContent:'center',
         borderRadius:50,

@@ -35,12 +35,11 @@ function App(){
         <Stack.Screen
         name='Login'
         component={Login}
-        options={{headerTitle:()=> <Header name='E-GD'/>,
+        options={{headerTitle:()=> <Header name='E-GD(Admin)'/>,
         headerStyle:{
           height:120,
-          borderBottomLeftRadius:50,
-          borderBottomRightRadius:250,
-          backgroundColor:'#F01284',
+          borderBottomRightRadius:130,
+          backgroundColor:'#0FE005',
           shadowColor:'#000',
           elevation:25
         }
@@ -51,12 +50,12 @@ function App(){
         <Stack.Screen
         name='Registration'
         component={Registration}
-        options={{headerTitle:()=> <Header name='E-GD'/>,
+        options={{headerTitle:()=> <Header name='E-GD(Admin)'/>,
         headerStyle:{
           height:120,
           borderBottomLeftRadius:50,
           borderBottomRightRadius:250,
-          backgroundColor:'#00e4d0',
+          backgroundColor:'#0FE005',
           shadowColor:'#000',
           elevation:25
         }
@@ -70,7 +69,7 @@ function App(){
       <Stack.Screen
         name='Dashboard'
         component={Dashboard}
-        options={{headerTitle:()=> <Header name='E-GD'/>,
+        options={{headerTitle:()=> <Header name='E-GD(Admin)'/>,
         headerStyle:{
           height:120,
           borderBottomLeftRadius:50,
