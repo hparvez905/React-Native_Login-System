@@ -44,25 +44,25 @@ const Registration = () => {
     }
 
   return (
-    <View style={style.container}>
+    <View style={styles.container}>
       <Text style={{fontWeight:'bold',fontSize:23}}>Register Here</Text>
       <View style={{marginTop:40}}>
         <TextInput
-        style={style.TextInput}
+        style={styles.TextInput}
         placeholder='First Name'
         onChangeText={(firstName)=> setFirstName(firstName)}
         autoCorrect={false}
         />
 
         <TextInput
-        style={style.TextInput}
+        style={styles.TextInput}
         placeholder='Last Name'
         onChangeText={(lastName)=> setLastName(lastName)}
         autoCorrect={false}
         />
 
     <TextInput
-        style={style.TextInput}
+        style={styles.TextInput}
         placeholder='Email'
         onChangeText={(email)=> setEmail(email)}
         autoCapitalize='none'
@@ -71,7 +71,7 @@ const Registration = () => {
         />
 
     <TextInput
-        style={style.TextInput}
+        style={styles.TextInput}
         placeholder='Password'
         onChangeText={(password)=> setPassword(password)}
         autoCapitalize='none'
@@ -79,7 +79,7 @@ const Registration = () => {
         secureTextEntry={true}
         />
          <TextInput
-        style={style.TextInput}
+        style={styles.TextInput}
         placeholder='Nid'
         onChangeText={(nid)=> setNid(nid)}
         autoCapitalize='none'
@@ -92,7 +92,7 @@ const Registration = () => {
       </View>
       <TouchableOpacity
       onPress={()=>registerUser(email,password,firstName,lastName,nid)}
-      style={style.button}>
+      style={styles.button}>
         <Text style={{fontWeight:'bold',fontSize:22}}
         >Register</Text>
       </TouchableOpacity>
@@ -102,7 +102,7 @@ const Registration = () => {
 
 export default Registration;
 
-const style=StyleSheet.create({
+const styles=StyleSheet.create({
     container:{
         flex:1,
         alignItems:'center',

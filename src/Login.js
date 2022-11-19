@@ -18,18 +18,18 @@ const Login = () => {
         }
     }
   return (
-    <View style={style.container}>
+    <View style={styles.container}>
       <Text style={{fontWeight:'bold',fontSize:26}}>Login</Text>
         <View style={{marginTop:40}}>
             <TextInput
-            style={style.TextInput}
+            style={styles.TextInput}
             placeholder='Email'
             onChangeText={(email)=>setEmail(email)}
             autoCapitalize='none'
             autoCorrect={false}
             />
             <TextInput
-            style={style.TextInput}
+            style={styles.TextInput}
             placeholder='password'
             onChangeText={(password)=>setPassword(password)}
             autoCapitalize='none'
@@ -40,7 +40,7 @@ const Login = () => {
         </View>
         <TouchableOpacity
         onPress={()=>loginUser(email,password)}
-        style={style.button}
+        style={styles.button}
         >
             <Text style={{fontWeight:'bold',fontSize:22}}>Login</Text>
         </TouchableOpacity>
@@ -56,7 +56,7 @@ const Login = () => {
 
 export default Login;
 
-const style=StyleSheet.create({
+const styles=StyleSheet.create({
     container:{
         flex:1,
         alignItems:'center',
